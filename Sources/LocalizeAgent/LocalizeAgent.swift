@@ -61,7 +61,8 @@ public struct LocalizeAgent: GraniteAgentPackage {
         "rounds": "how many times a batch of texts is asked for before what still fails stays in the source language; 3 when left out, at most 6",
     ]
     public static let guide = """
-        Tag localize to translate an app. It reads every localizable string out of the Swift: the literal in \
+        Tag localize to translate an app. Call it before reading the app's files: it reads every localizable \
+        string out of the Swift itself: the literal in \
         `Text("…")`, `Button("…")`, `Label("…", systemImage:)`, `Toggle("…")`, `Section("…")`, `TextField("…")`, \
         `.navigationTitle("…")`, `.help("…")`, `.alert("…")`, `String(localized: "…")`, `LocalizedStringKey`, \
         `NSLocalizedString("…")`, `"KEY".localized()`, and a literal given to a property or parameter the app declares \
