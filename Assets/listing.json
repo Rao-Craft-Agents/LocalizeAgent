@@ -1,0 +1,19 @@
+{
+  "name": "Localize",
+  "tagline": "An app's translations: every string harvested from its Swift, translated by your model, checked and incremental.",
+  "category": "developer",
+  "keywords": [
+    "swift",
+    "localization",
+    "translation",
+    "i18n",
+    "swiftui",
+    "xcstrings",
+    "granite",
+    "loom"
+  ],
+  "platforms": [
+    "macOS 14"
+  ],
+  "license": "MIT"
+}

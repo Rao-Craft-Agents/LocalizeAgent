@@ -1,9 +1,0 @@
-{
-  "name": "Localize",
-  "tagline": "An app's translations: every string harvested from its Swift, translated by your model, checked and incremental.",
-  "category": "developer",
-  "keywords": ["swift", "localization", "translation", "i18n", "swiftui", "xcstrings", "granite", "loom"],
-  "platforms": ["macOS 14"],
-  "license": "MIT",
-  "description": "An app's translations, from its own Swift. Localize reads every localizable string out of the code (`Text(\"…\")`, `Button(\"…\")`, `.navigationTitle(\"…\")`, `String(localized: \"…\")`, `NSLocalizedString`, and the properties and parameters the app declares as a `LocalizedStringKey`), with each interpolation written as the format specifier the runtime asks for: `Text(\"\\(count) recipes\")` is the key `%lld recipes`.\n\nIt writes the source language, then has the model your host has loaded translate what is new or changed into the languages you name, a batch at a time. Every answer is checked: every format specifier and line break kept, never left in English. A bad answer is asked for again with what was wrong; what still fails stays in English and is named. Say `{\"languages\": [\"fr\", \"de\", \"ja\"]}`, or `loom` for Loom's 28 languages; call again after new screens and only the new strings are asked for.\n\nIt keeps `Localizable.strings` a language or one String Catalog, adds the languages to the Xcode project's known regions, and makes sure the strings build into every app target. Without a model, it still writes the source language and says which languages wait.\n\nOne of the Rao Craft Agents: independent packages that, tagged in prompts along the life of a project, build an app of Loom's quality."
-}
