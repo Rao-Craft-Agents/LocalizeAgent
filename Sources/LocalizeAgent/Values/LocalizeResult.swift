@@ -1,7 +1,8 @@
 import Foundation
+import GraniteAgents
 
 /// What a call answers: the files written, as absolute paths, and where the app's languages stand.
-public struct LocalizeResult: Codable, Sendable, Equatable {
+public struct LocalizeResult: AgentAnswer, Equatable {
     /// The first file written.
     public var path: String?
     /// Every file written: a table a language (or the catalog), the project file, the helper. A file that came out the
